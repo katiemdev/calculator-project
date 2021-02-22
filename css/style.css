@@ -1,0 +1,68 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  text-align: center;
+  font-family: monospace;
+  color: white;
+  text-shadow: 3px 3px 0 black;
+  background-image: url('https://images.unsplash.com/photo-1547190027-9156686aa2f0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80');
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+form, select, button {
+  display: inline;
+  font-family: monospace;
+}
+
+input {
+  font-family: monospace;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+#num1, #num2, select, option, button {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+button {
+  background-color: black;
+  color: white;
+}
+
+@media screen and(max-width 500px) {
+  form, select, button {
+    display: block;
+  }
+}
